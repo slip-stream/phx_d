@@ -54,5 +54,8 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno618
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
+SELINUX_IGNORE_NEVERALLOWS := true
+
 # Inherit from the proprietary version
 -include vendor/xiaomi/phoenix/BoardConfigVendor.mk
+
